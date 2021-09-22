@@ -27,6 +27,10 @@ public class RemarkCommand extends Command {
     private final Index index;
     private final Remark remark;
 
+    /**
+     * @param index of the person in the filtered person list to edit
+     * @param remark to be assigned to a person
+     */
     public RemarkCommand(Index index, Remark remark) {
         requireAllNonNull(index, remark);
 
@@ -63,7 +67,7 @@ public class RemarkCommand extends Command {
         if (!(obj instanceof RemarkCommand)) {
             return false;
         }
-        RemarkCommand e= (RemarkCommand) obj;
+        RemarkCommand e = (RemarkCommand) obj;
         return index.equals(e.index) && remark.equals(e.remark);
     }
 

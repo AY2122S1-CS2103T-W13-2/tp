@@ -81,6 +81,12 @@ public class ParserUtil {
         return new Address(trimmedAddress);
     }
 
+    /**
+     * Returns a {@link Remark} wrapper for a remark string.
+     *
+     * @param remark string to be parse
+     * @return remark wrapper of the string
+     */
     public static Remark parseRemark(String remark) {
         requireNonNull(remark);
         String trimmedRemark = remark.trim();

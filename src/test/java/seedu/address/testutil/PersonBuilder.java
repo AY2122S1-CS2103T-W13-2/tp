@@ -78,6 +78,9 @@ public class PersonBuilder {
         return this;
     }
 
+    /**
+     * Set the {@code Remark} of the {@code Person} that we are building.
+     */
     public PersonBuilder withRemark(String remark) {
         this.remark = new Remark(remark);
         return this;
