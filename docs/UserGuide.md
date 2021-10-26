@@ -17,7 +17,7 @@ Spam is a desktop app for managing contacts **targeted at marketers who require 
   - [Clearing all entries: `clear`](#clearing-all-entries-clear)
   - [Exiting the program: `exit`](#exiting-the-program-exit)
   - [Saving the data](#saving-the-data)
-  - [Editing the data file](#editing-the-data-file)
+  - [Data encryption](#data-encryption)
 - [Controls](#controls)
   - [Navigating Previously Entered Commands](#navigating-previously-entered-commands)
 - [FAQ](#faq)
@@ -219,17 +219,17 @@ Format: `exit`
 
 Spam data are saved in the hard disk automatically after any command that changes the data. There is no need to save manually.
 
-### Editing the data file
-
-Spam data are saved as an encrypted file `[JAR file location]/data/addressbook.enc`. It is not intended to be user-modifiable. The contents of the encrypted file are intentionally obfuscated for security.
+<div markdown="block" class="alert alert-info">
+:information_source: Spam data are saved as an encrypted file `[JAR file location]/data/addressbook.enc`. It is not intended to be user-modifiable. The contents of the encrypted file are intentionally obfuscated for security.
 
 <div markdown="span" class="alert alert-warning">:exclamation: **Caution:**
 Manually modifying the encrypted file **will** corrupt the data. Spam will discard all data and start with an empty data file at the next run.
 </div>
+</div>
 
-### Archiving data files `[coming in v2.0]`
+### Data encryption
 
-_Details coming soon ..._
+Spam data is protected with the AES-256 encryption standard and is inaccessible to unauthorised users. 
 
 ---
 
